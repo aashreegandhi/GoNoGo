@@ -1,0 +1,66 @@
+# Food Go/No-Go Task (PsychoPy)
+
+## Overview
+This project implements a Go/No-Go task using PsychoPy to study food-related inhibitory control.
+
+Participants view images of food and must press the SPACEBAR for most stimuli (Go trials) but withhold responses when a No-Go cue appears.
+
+The task includes:
+- Food image presentation
+- Go cue (green circle)
+- No-Go cue (red circle)
+- Reaction time recording
+
+## Task Instructions
+Participants are instructed to:
+
+Press the SPACEBAR when they see a food image with a green circle.
+
+Do NOT press the SPACEBAR when they see a food image with a red circle.
+
+Responses and reaction times are recorded for each trial.
+
+## Requirements
+
+Python 3.x
+
+Required packages:
+- psychopy
+- pandas
+
+Install dependencies:
+
+pip install psychopy pandas
+
+## File Structure
+
+Food-Choice-Task/
+│
+├── lists/
+│   └── HF_LF_60.csv      # Stimulus list with food image names and fat category
+│
+├── stimuli/
+│   └── food_images/      # Food stimulus images
+│
+└── README.md             # Project documentation
+
+## Running the Experiment
+
+1. Open the script in PsychoPy Coder.
+2. Update the stimulus file paths if necessary.
+3. Run the script.
+4. Enter participant information when prompted.
+
+## Output
+
+After the experiment finishes, a CSV file is saved containing:
+
+- participant ID
+- stimulus name
+- trial type (Go / No-Go)
+- participant response
+- reaction time
+
+Example output file:
+
+participant1_gonogo.csv
